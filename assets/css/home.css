@@ -1,0 +1,210 @@
+.home {
+    
+}
+
+.home__banner-block {
+    background-image: url(../libs/img/root__bannner3.png), url(../libs/img/root__bannner4.png), url(https://3.bp.blogspot.com/-Gim5MoUonCc/WxTAdhv4ASI/AAAAAAAABg8/aNShul1ADe0RLxawz3ERQbExt6p7v3XzQCLcBGAs/s1600/chibi-naruto-sasuke-sakura.png) , var(--gradient-sec);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    padding-top: 130px;
+}
+
+.home__banner-block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../libs/img/root__bannner2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.home__banner {
+    background: rgb(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.home__banner-title {
+    font-size: 3rem;
+}
+
+.home__banner-desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.home__cate {
+    background: transparent;
+}
+
+.home__cate-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home__cate-title {
+
+}
+
+.home__cate-desc {
+
+}
+
+.home__cate-list {
+    
+}
+
+.home__cate-item {
+    display: block;
+    padding: 10px;
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+
+.home__cate-item-media {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.home__cate-item-media-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.5s;
+}
+
+.home__cate-item:hover .home__cate-item-media-img {
+    transform: scale(1.2);
+}
+
+.home__cate-item-content {
+    margin-top: 10px;
+}
+
+.home__cate-item-content-title {
+    font-size: 1.6rem;
+}
+
+.home__cate-item-content-desc {
+
+}
+
+/* hokage  */
+.home__hokage {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.home__hokage-heaer {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home__hokage-header-title {
+
+}
+
+.home__hokage-header-desc {
+
+}
+
+.home__hokage-list-block {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.home__hokage-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__hokage-item-block{
+    display: none;
+    background: #fff;
+    /* box-shadow: 1px 0 50px rgb(0 0 0 / 10%); */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.home__hokage-item-block.active,
+.home__hokage-item-block.active--right {
+    display: flex;
+}
+
+.home__hokage-item {
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.home__hokage-item-block.active .home__hokage-item{
+    animation: leftup ease-in 0.3s;
+}
+
+.home__hokage-item-block.active.active--right .home__hokage-item{
+    animation: rightup ease-in 0.3s;
+}
+
+.home__hokage-item-media {
+    height: 500px;
+}
+
+.home__hokage-item-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.home__hokage-item-content-block {
+    display: flex;
+}
+
+.home__hokage-item-content {
+    margin: auto;
+}
+
+.home__hokage-item-content-title {
+    font-size: 3rem;
+}
+
+.home__hokage-item-content-desc {
+    font-size: 1.8rem;
+}
+
+.home__hokage-ac {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__hokage-ac-btn {
+    background: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+}
+
+.home__hokage-ac-btn i {
+    font-size: 2rem;
+    color: #ccc;
+    margin: auto;
+}
+

@@ -1,0 +1,82 @@
+.root {
+
+}
+
+.root__header-block {
+    height: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 1s;
+    background: transparent;
+}
+
+.root__header-block.active {
+    height: 90px;
+    box-shadow: 0 0 50px 0 rgb(0 0 0 / 10%);
+    background: #fff;
+}
+
+.root__header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.root__body {
+    
+}
+
+.root__header-logo {
+  
+}
+
+.root__header-logo-link {
+    display: block;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5d/BurningFlame0.gif);
+    background-position: bottom;
+	text-transform: uppercase;
+	color: transparent;
+    -moz-background-clip: text;
+	-webkit-background-clip: text;
+    font-size: 3rem;
+    padding: 10px 0px;
+}
+
+.root__header-nav {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.root__header-nav-item {
+    height: 100%;
+}
+
+.root__header-nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.root__header-block.active .root__header-nav-link {
+    color: #000;
+}
+
+.root__header-nav-link:hover span {
+    animation: surf__down 0.5s;
+    color: var(--primary);
+}
+
+.root__header-ac {
+}
+
+.root__header-ac-off {
+    display: flex;
+}
