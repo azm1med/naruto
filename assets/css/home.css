@@ -1,33 +1,19 @@
 .home {
-    
-}
-
-.home__banner-block {
-    background-image: url(../libs/img/root__bannner3.png), url(../libs/img/root__bannner4.png), url(https://3.bp.blogspot.com/-Gim5MoUonCc/WxTAdhv4ASI/AAAAAAAABg8/aNShul1ADe0RLxawz3ERQbExt6p7v3XzQCLcBGAs/s1600/chibi-naruto-sasuke-sakura.png) , var(--gradient-sec);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 700px;
-    position: relative;
-    padding-top: 130px;
-}
-
-.home__banner-block::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url(../libs/img/root__bannner2.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
+    /* margin-top: 130px; */
 }
 
 .home__banner {
-    background: rgb(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 20px;
-    border-radius: 4px;
+    height: 700px;
+    position: relative;
+}
+
+.home__banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .home__banner-title {
@@ -41,6 +27,7 @@
 
 .home__cate {
     background: transparent;
+    padding: 40px 0;
 }
 
 .home__cate-header {
@@ -98,113 +85,142 @@
 
 }
 
-/* hokage  */
-.home__hokage {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+/* new  */
 
-.home__hokage-heaer {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.home__hokage-header-title {
-
-}
-
-.home__hokage-header-desc {
-
-}
-
-.home__hokage-list-block {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.home__hokage-list {
+.home__new {
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    z-index: 1;
+    margin-top: -60px;
+    background-image: url(../libs/img/news-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 
-.home__hokage-item-block{
-    display: none;
-    background: #fff;
-    /* box-shadow: 1px 0 50px rgb(0 0 0 / 10%); */
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-.home__hokage-item-block.active,
-.home__hokage-item-block.active--right {
+.home__new-header {
+    padding: 50px 0 30px 0;
     display: flex;
 }
 
-.home__hokage-item {
-    padding: 20px;
-    border-radius: 6px;
-}
-
-.home__hokage-item-block.active .home__hokage-item{
-    animation: leftup ease-in 0.3s;
-}
-
-.home__hokage-item-block.active.active--right .home__hokage-item{
-    animation: rightup ease-in 0.3s;
-}
-
-.home__hokage-item-media {
-    height: 500px;
-}
-
-.home__hokage-item-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.home__hokage-item-content-block {
-    display: flex;
-}
-
-.home__hokage-item-content {
+.home__new-header-img {
     margin: auto;
 }
 
-.home__hokage-item-content-title {
-    font-size: 3rem;
+.home__new-body {
+    padding-bottom: 50px;
 }
 
-.home__hokage-item-content-desc {
-    font-size: 1.8rem;
+.home__new-item {
+    margin-bottom: 20px;
 }
 
-.home__hokage-ac {
+.home__new-silde {
+    border-radius: 6px;
+    position: relative;
+}
+
+.home__new-silde-list {
+   margin: 0;
+}
+
+.home__new-silde-item {
+    height: 380px;
+    display: none;
+}
+
+.home__new-silde-item.active {
+    display: block;
+}
+
+.home__new-silde-item-link {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.home__new-silde-item-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.home__new-silde-ac {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    width: 100%;
-    padding: 0 12px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
-.home__hokage-ac-btn {
-    background: rgba(0, 0, 0, 0.5);
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
+.home__new-silde-ac-btn {
     display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ccc;
 }
 
-.home__hokage-ac-btn i {
+.home__new-silde-ac-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.home__new-silde-ac-btn i {
     font-size: 2rem;
-    color: #ccc;
     margin: auto;
 }
 
+.home__new-hot {
+    background: #fff;
+    height: 100%;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 1px 0 50px rgb(0 0 0 / 10%);
+}
+
+.home__new-hot-title {
+    font-size: 2rem;
+}
+
+.home__new-hot-list {
+    margin: 0;
+}
+
+.home__new-hot-item {
+
+}
+
+.home__new-hot-item-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.home__new-hot-item-link:hover {
+    background: #ccc;
+}
+
+.home__new-hot-item-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.home__new-hot-item-content {
+    flex: 1;
+}
+
+.home__new-hot-item-title {
+    font-size: 1.6rem;
+}
+
+.home__new-hot-item-desc {
+    -webkit-line-clamp: 2;
+}

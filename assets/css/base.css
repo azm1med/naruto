@@ -59,6 +59,15 @@ button {
     --textlight: #636363;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes surf__down {
     49% {
         transform: translateY(100%);
@@ -116,5 +125,11 @@ button {
 
 .desc {
     font-size: 2rem;
+}
+
+.compact {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 /* base  */

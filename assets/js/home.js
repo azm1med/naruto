@@ -1,24 +1,15 @@
 $(document).ready(function() {
 
-    var times = 5000;
-    // $('#im_' + currentImage).removeClass('active');
-    $('#previous').on('click', function(){
-        // $('#im_' + currentImage).stop().css("display","flex").fadeOut(1);
-        $('#im_' + currentImage).removeClass('active');
-        $('#im_' + currentImage).removeClass('active--right');
+    $('#home__news__prev').on('click', function(){
+        $('#home__news__' + currentImage).removeClass('active');
         decreaseImage();
-        // $('#im_' + currentImage).stop().css("display","flex").fadeIn(1);
-        $('#im_' + currentImage).addClass('active');
+        $('#home__news__' + currentImage).addClass('active');
     });
 
-    $('#next').on('click', function(){
-        // $('#im_' + currentImage).css("display","flex").stop().fadeOut(1);
-        $('#im_' + currentImage).removeClass('active');
-        $('#im_' + currentImage).removeClass('active--right');
+    $('#home__news__next').on('click', function(){
+        $('#home__news__' + currentImage).removeClass('active');
         increaseImage();
-        // $('#im_' + currentImage).css("display","flex").stop().fadeIn(1);
-        $('#im_' + currentImage).addClass('active');
-        $('#im_' + currentImage).addClass('active--right');
+        $('#home__news__' + currentImage).addClass('active');
     });
 
     var currentImage = 1;
@@ -39,7 +30,7 @@ $(document).ready(function() {
     }
 
     window.setInterval(function() {
-        $('#previous').click();
-    }, times); 
+        $('#home__news__prev').click();
+    }, 5000); 
 
 });
