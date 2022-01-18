@@ -8,6 +8,6 @@ function scrollFunction() {
         body.style.marginTop = '90px';
     } else {
         nav.classList.remove('active');
-        body.style.marginTop = '131px';
+        body.style.marginTop = '130px';
     }
 }

@@ -1,0 +1,97 @@
+.shinobi {
+    padding: 40px 0;
+}
+
+.shinobi__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shinobi__header-title {
+
+}
+
+.shinobi__header-desc {
+
+}
+
+.shinobi__body {
+
+}
+
+.shinobi__fillter {
+    margin-bottom: 20px;
+}
+
+.shinobi__fillter-item {
+
+}
+
+.shinobi__list {
+    /* margin-bottom: 20px; */
+}
+
+.shinobi__item-block {
+    margin-bottom: 24px;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.shinobi__item {
+    display: block;
+    box-shadow: var(--boxshadow);
+    border-radius: 4px;
+}
+
+.shinobi__item-media {
+    height: 200px;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+}
+
+.shinobi__item-media-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in;
+}
+
+.shinobi__item:hover .shinobi__item-media-img {
+    transform: scale(1.1);
+}
+
+.shinobi__item-content {
+    background: #fff;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+
+.shinobi__item-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.shinobi__item:hover .shinobi__item-title {
+    text-decoration: underline;
+}
+
+.shinobi__item-desc {
+    -webkit-line-clamp: 4;
+}
+
+.shinobi__item-ac {
+    display: flex;
+    padding:  0 10px 10px;
+}
+
+.shinobi__item-ac-btn {
+    margin: auto;
+    border-radius: 50px;
+}   
+
+.shinobi__list-control-block {
+    display: flex;
+}
+
+.shinobi__list-control {
+    margin: auto;
+}

@@ -26,7 +26,7 @@
 }
 
 .root__body {
-    /* margin-top: 130px; */
+    margin-top: 130px;
 }
 
 .root__header-logo {
@@ -94,4 +94,38 @@
 
 .root__header-ac-off {
     display: flex;
+}
+
+
+.root__footer-block {
+    min-height: 300px;
+    background-image: url(../libs/img/bg-footer.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 150px 0 20px 0;
+}
+
+.root__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.root__footer-img {
+    margin-right: 50px;
+}
+
+.root__footer-content {
+    max-width: 300px;
+    color: #fff;
+}
+
+.root__footer-content-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.root__footer-content-desc {
+    font-size: 1.4rem;
 }

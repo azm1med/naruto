@@ -57,6 +57,7 @@ button {
     --rgba-primary-9: rgba(240, 31, 117, 0.9);
     --textbold: #262626;
     --textlight: #636363;
+    --boxshadow: 0 0 60px 0 rgb(0 0 0 / 10%);
 }
 
 @keyframes fadeIn {
